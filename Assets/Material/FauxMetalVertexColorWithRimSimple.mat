@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: FauxMetalVertexColorWithRimSimple
+  m_Shader: {fileID: 4800000, guid: 0f0738ed93259ff40a7532eafe4de9d2, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs: {}
+    m_Floats:
+      data:
+        first:
+          name: _ContrastCenter
+        second: 0.675
+      data:
+        first:
+          name: _ContrastPower
+        second: 7.107143
+      data:
+        first:
+          name: _ContrastValueAtCenter
+        second: 0.7275001
+      data:
+        first:
+          name: _DiffuseBleed
+        second: 0.21428569
+      data:
+        first:
+          name: _RimPower
+        second: 3.535714
+      data:
+        first:
+          name: _ViewConstant
+        second: 0
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _RimColor
+        second: {r: 0.7254902, g: 0.5921569, b: 0.6, a: 1}

@@ -1,0 +1,1966 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  m_Layer: 0
+  m_Name: DismountUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f7db9a480b403690a4a83220213122, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  material: {fileID: 2100000, guid: 5545e5a4c0bcb004c9e95cd2c8c2fab3, type: 2}
+  sprites:
+  - name: icon_bt_switchcamera
+    outer:
+      serializedVersion: 2
+      x: 688
+      y: 1220
+      width: 249
+      height: 151
+    inner:
+      serializedVersion: 2
+      x: 688
+      y: 1220
+      width: 249
+      height: 151
+    rotated: 0
+    paddingLeft: 0.02811245
+    paddingRight: 0
+    paddingTop: 0.49006623
+    paddingBottom: 0.205298
+  - name: buttonbg-down
+    outer:
+      serializedVersion: 2
+      x: 538
+      y: 536
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 593
+      y: 594
+      width: 18
+      height: 12
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: buttonbg-up
+    outer:
+      serializedVersion: 2
+      x: 861
+      y: 463
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 916
+      y: 521
+      width: 18
+      height: 12
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: buttonbg-lit
+    outer:
+      serializedVersion: 2
+      x: 1048
+      y: 592
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 1103
+      y: 650
+      width: 18
+      height: 12
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_bt_back
+    outer:
+      serializedVersion: 2
+      x: 1435
+      y: 408
+      width: 79
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 1435
+      y: 408
+      width: 79
+      height: 100
+    rotated: 0
+    paddingLeft: 1.113924
+    paddingRight: 1.1265823
+    paddingTop: 0.96
+    paddingBottom: 0.6
+  - name: icon_bt_changechar
+    outer:
+      serializedVersion: 2
+      x: 1897
+      y: 1384
+      width: 127
+      height: 252
+    inner:
+      serializedVersion: 2
+      x: 1897
+      y: 1384
+      width: 127
+      height: 252
+    rotated: 0
+    paddingLeft: 0.23622048
+    paddingRight: 0.1496063
+    paddingTop: 0.015873017
+    paddingBottom: 0
+  - name: vignettecorner
+    outer:
+      serializedVersion: 2
+      x: 1383
+      y: 1792
+      width: 360
+      height: 256
+    inner:
+      serializedVersion: 2
+      x: 1383
+      y: 1792
+      width: 360
+      height: 256
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MenuButtonsBackground
+    outer:
+      serializedVersion: 2
+      x: 1887
+      y: 581
+      width: 121
+      height: 175
+    inner:
+      serializedVersion: 2
+      x: 1888
+      y: 581
+      width: 119
+      height: 175
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: slider-button-down
+    outer:
+      serializedVersion: 2
+      x: 1771
+      y: 452
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 1771
+      y: 452
+      width: 128
+      height: 128
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_bt_ready
+    outer:
+      serializedVersion: 2
+      x: 213
+      y: 1028
+      width: 228
+      height: 207
+    inner:
+      serializedVersion: 2
+      x: 213
+      y: 1028
+      width: 228
+      height: 207
+    rotated: 0
+    paddingLeft: 0.06140351
+    paddingRight: 0.06140351
+    paddingTop: 0.11111111
+    paddingBottom: 0.12560387
+  - name: slider-button-up
+    outer:
+      serializedVersion: 2
+      x: 1900
+      y: 452
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 1900
+      y: 452
+      width: 128
+      height: 128
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_bt_editlevel
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 928
+      width: 177
+      height: 252
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 928
+      width: 177
+      height: 252
+    rotated: 0
+    paddingLeft: 0.2542373
+    paddingRight: 0.19209039
+    paddingTop: 0.015873017
+    paddingBottom: 0
+  - name: slider-button-lit
+    outer:
+      serializedVersion: 2
+      x: 919
+      y: 592
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 984
+      y: 657
+      width: -2
+      height: -2
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_bt_Changevehicle
+    outer:
+      serializedVersion: 2
+      x: 1668
+      y: 895
+      width: 229
+      height: 252
+    inner:
+      serializedVersion: 2
+      x: 1668
+      y: 895
+      width: 229
+      height: 252
+    rotated: 0
+    paddingLeft: 0.08733624
+    paddingRight: 0.030567685
+    paddingTop: 0.015873017
+    paddingBottom: 0
+  - name: icon_bt_changeposition
+    outer:
+      serializedVersion: 2
+      x: 213
+      y: 1236
+      width: 254
+      height: 188
+    inner:
+      serializedVersion: 2
+      x: 213
+      y: 1236
+      width: 254
+      height: 188
+    rotated: 0
+    paddingLeft: 0.007874016
+    paddingRight: 0
+    paddingTop: 0.27659574
+    paddingBottom: 0.08510638
+  - name: icon_bt_steering
+    outer:
+      serializedVersion: 2
+      x: 1411
+      y: 1142
+      width: 256
+      height: 237
+    inner:
+      serializedVersion: 2
+      x: 1411
+      y: 1142
+      width: 256
+      height: 237
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.050632913
+    paddingBottom: 0.029535865
+  - name: white
+    outer:
+      serializedVersion: 2
+      x: 442
+      y: 1219
+      width: 16
+      height: 16
+    inner:
+      serializedVersion: 2
+      x: 443
+      y: 1220
+      width: 14
+      height: 14
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_bt_close
+    outer:
+      serializedVersion: 2
+      x: 1304
+      y: 1159
+      width: 95
+      height: 118
+    inner:
+      serializedVersion: 2
+      x: 1304
+      y: 1159
+      width: 95
+      height: 118
+    rotated: 0
+    paddingLeft: 0.84210527
+    paddingRight: 0.85263157
+    paddingTop: 0.7457627
+    paddingBottom: 0.42372882
+  - name: icons_check
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 1181
+      width: 212
+      height: 243
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 1181
+      width: 212
+      height: 243
+    rotated: 0
+    paddingLeft: 0.08962264
+    paddingRight: 0.11792453
+    paddingTop: 0.053497944
+    paddingBottom: 0
+  - name: scrubber_fg
+    outer:
+      serializedVersion: 2
+      x: 1379
+      y: 413
+      width: 55
+      height: 55
+    inner:
+      serializedVersion: 2
+      x: 1406
+      y: 440
+      width: 1
+      height: 1
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icons_bt_stats
+    outer:
+      serializedVersion: 2
+      x: 468
+      y: 1206
+      width: 219
+      height: 218
+    inner:
+      serializedVersion: 2
+      x: 468
+      y: 1206
+      width: 219
+      height: 218
+    rotated: 0
+    paddingLeft: 0.11415525
+    paddingRight: 0.05479452
+    paddingTop: 0.17431192
+    paddingBottom: 0
+  - name: slider_vol_fg
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 1513
+      width: 687
+      height: 87
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 1513
+      width: 687
+      height: 87
+    rotated: 0
+    paddingLeft: 0.0029112082
+    paddingRight: 0.0014556041
+    paddingTop: 0.2413793
+    paddingBottom: 0.22988506
+  - name: slider_vol_bg
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 1425
+      width: 687
+      height: 87
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 1425
+      width: 687
+      height: 87
+    rotated: 0
+    paddingLeft: 0.0029112082
+    paddingRight: 0.0014556041
+    paddingTop: 0.2413793
+    paddingBottom: 0.22988506
+  - name: icon_bt_sel_arrow
+    outer:
+      serializedVersion: 2
+      x: 564
+      y: 962
+      width: 62
+      height: 60
+    inner:
+      serializedVersion: 2
+      x: 564
+      y: 962
+      width: 62
+      height: 60
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_msdismount
+    outer:
+      serializedVersion: 2
+      x: 1944
+      y: 1647
+      width: 93
+      height: 200
+    inner:
+      serializedVersion: 2
+      x: 1944
+      y: 1647
+      width: 93
+      height: 200
+    rotated: 0
+    paddingLeft: 0.58064514
+    paddingRight: 0.56989247
+    paddingTop: 0
+    paddingBottom: 0
+  - name: newball
+    outer:
+      serializedVersion: 2
+      x: 990
+      y: 466
+      width: 125
+      height: 125
+    inner:
+      serializedVersion: 2
+      x: 990
+      y: 466
+      width: 125
+      height: 125
+    rotated: 0
+    paddingLeft: 0.008
+    paddingRight: 0.016
+    paddingTop: 0.008
+    paddingBottom: 0.016
+  - name: 360_RT
+    outer:
+      serializedVersion: 2
+      x: 1298
+      y: 382
+      width: 80
+      height: 86
+    inner:
+      serializedVersion: 2
+      x: 1298
+      y: 382
+      width: 80
+      height: 86
+    rotated: 0
+    paddingLeft: 0.125
+    paddingRight: 0.125
+    paddingTop: 0.08139535
+    paddingBottom: 0.08139535
+  - name: 360_X
+    outer:
+      serializedVersion: 2
+      x: 1162
+      y: 238
+      width: 82
+      height: 82
+    inner:
+      serializedVersion: 2
+      x: 1162
+      y: 238
+      width: 82
+      height: 82
+    rotated: 0
+    paddingLeft: 0.1097561
+    paddingRight: 0.1097561
+    paddingTop: 0.1097561
+    paddingBottom: 0.1097561
+  - name: 360_Back
+    outer:
+      serializedVersion: 2
+      x: 1771
+      y: 585
+      width: 69
+      height: 70
+    inner:
+      serializedVersion: 2
+      x: 1771
+      y: 585
+      width: 69
+      height: 70
+    rotated: 0
+    paddingLeft: 0.24637681
+    paddingRight: 0.20289855
+    paddingTop: 0.22857143
+    paddingBottom: 0.2
+  - name: 360_A
+    outer:
+      serializedVersion: 2
+      x: 976
+      y: 293
+      width: 82
+      height: 82
+    inner:
+      serializedVersion: 2
+      x: 976
+      y: 293
+      width: 82
+      height: 82
+    rotated: 0
+    paddingLeft: 0.1097561
+    paddingRight: 0.1097561
+    paddingTop: 0.1097561
+    paddingBottom: 0.1097561
+  - name: 360_B
+    outer:
+      serializedVersion: 2
+      x: 1379
+      y: 325
+      width: 82
+      height: 82
+    inner:
+      serializedVersion: 2
+      x: 1379
+      y: 325
+      width: 82
+      height: 82
+    rotated: 0
+    paddingLeft: 0.1097561
+    paddingRight: 0.1097561
+    paddingTop: 0.1097561
+    paddingBottom: 0.1097561
+  - name: 360_Dpad_Down
+    outer:
+      serializedVersion: 2
+      x: 1116
+      y: 407
+      width: 90
+      height: 90
+    inner:
+      serializedVersion: 2
+      x: 1116
+      y: 407
+      width: 90
+      height: 90
+    rotated: 0
+    paddingLeft: 0.055555556
+    paddingRight: 0.055555556
+    paddingTop: 0.055555556
+    paddingBottom: 0.055555556
+  - name: 360_LT
+    outer:
+      serializedVersion: 2
+      x: 1081
+      y: 320
+      width: 80
+      height: 86
+    inner:
+      serializedVersion: 2
+      x: 1081
+      y: 320
+      width: 80
+      height: 86
+    rotated: 0
+    paddingLeft: 0.125
+    paddingRight: 0.125
+    paddingTop: 0.08139535
+    paddingBottom: 0.08139535
+  - name: 360_Dpad
+    outer:
+      serializedVersion: 2
+      x: 794
+      y: 373
+      width: 90
+      height: 89
+    inner:
+      serializedVersion: 2
+      x: 794
+      y: 373
+      width: 90
+      height: 89
+    rotated: 0
+    paddingLeft: 0.055555556
+    paddingRight: 0.055555556
+    paddingTop: 0.06741573
+    paddingBottom: 0.056179777
+  - name: 360_Right_Stick
+    outer:
+      serializedVersion: 2
+      x: 1207
+      y: 408
+      width: 90
+      height: 89
+    inner:
+      serializedVersion: 2
+      x: 1207
+      y: 408
+      width: 90
+      height: 89
+    rotated: 0
+    paddingLeft: 0.055555556
+    paddingRight: 0.055555556
+    paddingTop: 0.06741573
+    paddingBottom: 0.056179777
+  - name: 360_Back_Alt
+    outer:
+      serializedVersion: 2
+      x: 1306
+      y: 574
+      width: 92
+      height: 52
+    inner:
+      serializedVersion: 2
+      x: 1306
+      y: 574
+      width: 92
+      height: 52
+    rotated: 0
+    paddingLeft: 0.054347824
+    paddingRight: 0.032608695
+    paddingTop: 0.46153846
+    paddingBottom: 0.46153846
+  - name: 360_Dpad_Up
+    outer:
+      serializedVersion: 2
+      x: 1640
+      y: 1701
+      width: 90
+      height: 90
+    inner:
+      serializedVersion: 2
+      x: 1640
+      y: 1701
+      width: 90
+      height: 90
+    rotated: 0
+    paddingLeft: 0.055555556
+    paddingRight: 0.055555556
+    paddingTop: 0.055555556
+    paddingBottom: 0.055555556
+  - name: 360_Dpad_Left
+    outer:
+      serializedVersion: 2
+      x: 919
+      y: 741
+      width: 90
+      height: 90
+    inner:
+      serializedVersion: 2
+      x: 919
+      y: 741
+      width: 90
+      height: 90
+    rotated: 0
+    paddingLeft: 0.055555556
+    paddingRight: 0.055555556
+    paddingTop: 0.055555556
+    paddingBottom: 0.055555556
+  - name: 360_Left_Stick
+    outer:
+      serializedVersion: 2
+      x: 990
+      y: 376
+      width: 90
+      height: 89
+    inner:
+      serializedVersion: 2
+      x: 990
+      y: 376
+      width: 90
+      height: 89
+    rotated: 0
+    paddingLeft: 0.055555556
+    paddingRight: 0.055555556
+    paddingTop: 0.06741573
+    paddingBottom: 0.056179777
+  - name: 360_Start_Alt
+    outer:
+      serializedVersion: 2
+      x: 1640
+      y: 1648
+      width: 92
+      height: 52
+    inner:
+      serializedVersion: 2
+      x: 1640
+      y: 1648
+      width: 92
+      height: 52
+    rotated: 0
+    paddingLeft: 0.054347824
+    paddingRight: 0.032608695
+    paddingTop: 0.46153846
+    paddingBottom: 0.46153846
+  - name: 360_RB
+    outer:
+      serializedVersion: 2
+      x: 1931
+      y: 404
+      width: 88
+      height: 47
+    inner:
+      serializedVersion: 2
+      x: 1931
+      y: 404
+      width: 88
+      height: 47
+    rotated: 0
+    paddingLeft: 0.06818182
+    paddingRight: 0.06818182
+    paddingTop: 0.5744681
+    paddingBottom: 0.5531915
+  - name: 360_Dpad_Right
+    outer:
+      serializedVersion: 2
+      x: 885
+      y: 373
+      width: 90
+      height: 89
+    inner:
+      serializedVersion: 2
+      x: 885
+      y: 373
+      width: 90
+      height: 89
+    rotated: 0
+    paddingLeft: 0.055555556
+    paddingRight: 0.055555556
+    paddingTop: 0.06741573
+    paddingBottom: 0.056179777
+  - name: 360_Y
+    outer:
+      serializedVersion: 2
+      x: 1596
+      y: 357
+      width: 82
+      height: 82
+    inner:
+      serializedVersion: 2
+      x: 1596
+      y: 357
+      width: 82
+      height: 82
+    rotated: 0
+    paddingLeft: 0.1097561
+    paddingRight: 0.1097561
+    paddingTop: 0.1097561
+    paddingBottom: 0.1097561
+  - name: 360_Start
+    outer:
+      serializedVersion: 2
+      x: 1405
+      y: 768
+      width: 76
+      height: 70
+    inner:
+      serializedVersion: 2
+      x: 1405
+      y: 768
+      width: 76
+      height: 70
+    rotated: 0
+    paddingLeft: 0.17105263
+    paddingRight: 0.14473684
+    paddingTop: 0.22857143
+    paddingBottom: 0.2
+  - name: 360_LB
+    outer:
+      serializedVersion: 2
+      x: 1842
+      y: 404
+      width: 88
+      height: 47
+    inner:
+      serializedVersion: 2
+      x: 1842
+      y: 404
+      width: 88
+      height: 47
+    rotated: 0
+    paddingLeft: 0.06818182
+    paddingRight: 0.06818182
+    paddingTop: 0.5744681
+    paddingBottom: 0.5531915
+  - name: menu-bg-9tile_nodither
+    outer:
+      serializedVersion: 2
+      x: 794
+      y: 496
+      width: 64
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 814
+      y: 516
+      width: 24
+      height: 24
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: buttonbg2-down_nodither
+    outer:
+      serializedVersion: 2
+      x: 897
+      y: 1372
+      width: 256
+      height: 256
+    inner:
+      serializedVersion: 2
+      x: 1024
+      y: 1392
+      width: 2
+      height: 6
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: buttonbg2-up_nodither
+    outer:
+      serializedVersion: 2
+      x: 1154
+      y: 1278
+      width: 256
+      height: 256
+    inner:
+      serializedVersion: 2
+      x: 1281
+      y: 1298
+      width: 2
+      height: 6
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: buttonbg2-lit_nodither
+    outer:
+      serializedVersion: 2
+      x: 1383
+      y: 1535
+      width: 256
+      height: 256
+    inner:
+      serializedVersion: 2
+      x: 1510
+      y: 1555
+      width: 2
+      height: 6
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: controller_image_nodither
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 1601
+      width: 896
+      height: 447
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 1601
+      width: 896
+      height: 447
+    rotated: 0
+    paddingLeft: 0.059151787
+    paddingRight: 0.08370536
+    paddingTop: 0.015659954
+    paddingBottom: 0.12975392
+  - name: hdi_slider-menu_nodither
+    outer:
+      serializedVersion: 2
+      x: 861
+      y: 635
+      width: 53
+      height: 54
+    inner:
+      serializedVersion: 2
+      x: 883
+      y: 657
+      width: 9
+      height: 6
+    rotated: 0
+    paddingLeft: 0.018867925
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Mfi_LT
+    outer:
+      serializedVersion: 2
+      x: 1207
+      y: 321
+      width: 80
+      height: 86
+    inner:
+      serializedVersion: 2
+      x: 1207
+      y: 321
+      width: 80
+      height: 86
+    rotated: 0
+    paddingLeft: 0.125
+    paddingRight: 0.125
+    paddingTop: 0.08139535
+    paddingBottom: 0.08139535
+  - name: Mfi_RB
+    outer:
+      serializedVersion: 2
+      x: 1504
+      y: 896
+      width: 88
+      height: 47
+    inner:
+      serializedVersion: 2
+      x: 1504
+      y: 896
+      width: 88
+      height: 47
+    rotated: 0
+    paddingLeft: 0.06818182
+    paddingRight: 0.06818182
+    paddingTop: 0.5744681
+    paddingBottom: 0.5531915
+  - name: Mfi_X
+    outer:
+      serializedVersion: 2
+      x: 1759
+      y: 369
+      width: 82
+      height: 82
+    inner:
+      serializedVersion: 2
+      x: 1759
+      y: 369
+      width: 82
+      height: 82
+    rotated: 0
+    paddingLeft: 0.1097561
+    paddingRight: 0.1097561
+    paddingTop: 0.1097561
+    paddingBottom: 0.1097561
+  - name: Mfi_B
+    outer:
+      serializedVersion: 2
+      x: 1059
+      y: 237
+      width: 82
+      height: 82
+    inner:
+      serializedVersion: 2
+      x: 1059
+      y: 237
+      width: 82
+      height: 82
+    rotated: 0
+    paddingLeft: 0.1097561
+    paddingRight: 0.1097561
+    paddingTop: 0.1097561
+    paddingBottom: 0.1097561
+  - name: Mfi_Y
+    outer:
+      serializedVersion: 2
+      x: 1462
+      y: 325
+      width: 82
+      height: 82
+    inner:
+      serializedVersion: 2
+      x: 1462
+      y: 325
+      width: 82
+      height: 82
+    rotated: 0
+    paddingLeft: 0.1097561
+    paddingRight: 0.1097561
+    paddingTop: 0.1097561
+    paddingBottom: 0.1097561
+  - name: Mfi_RT
+    outer:
+      serializedVersion: 2
+      x: 1515
+      y: 422
+      width: 80
+      height: 86
+    inner:
+      serializedVersion: 2
+      x: 1515
+      y: 422
+      width: 80
+      height: 86
+    rotated: 0
+    paddingLeft: 0.125
+    paddingRight: 0.125
+    paddingTop: 0.08139535
+    paddingBottom: 0.08139535
+  - name: Mfi_LB
+    outer:
+      serializedVersion: 2
+      x: 1842
+      y: 356
+      width: 88
+      height: 47
+    inner:
+      serializedVersion: 2
+      x: 1842
+      y: 356
+      width: 88
+      height: 47
+    rotated: 0
+    paddingLeft: 0.06818182
+    paddingRight: 0.06818182
+    paddingTop: 0.5744681
+    paddingBottom: 0.5531915
+  - name: Mfi_A
+    outer:
+      serializedVersion: 2
+      x: 1288
+      y: 299
+      width: 82
+      height: 82
+    inner:
+      serializedVersion: 2
+      x: 1288
+      y: 299
+      width: 82
+      height: 82
+    rotated: 0
+    paddingLeft: 0.1097561
+    paddingRight: 0.1097561
+    paddingTop: 0.1097561
+    paddingBottom: 0.1097561
+  - name: metal_garage_door
+    outer:
+      serializedVersion: 2
+      x: 1247
+      y: 839
+      width: 256
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 1247
+      y: 839
+      width: 256
+      height: 128
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: price_bg
+    outer:
+      serializedVersion: 2
+      x: 1435
+      y: 509
+      width: 200
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 1435
+      y: 509
+      width: 200
+      height: 64
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: premiumbannerbg
+    outer:
+      serializedVersion: 2
+      x: 1640
+      y: 1380
+      width: 256
+      height: 256
+    inner:
+      serializedVersion: 2
+      x: 1656
+      y: 1396
+      width: 224
+      height: 224
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Twitter_logo_blue
+    outer:
+      serializedVersion: 2
+      x: 1306
+      y: 469
+      width: 128
+      height: 104
+    inner:
+      serializedVersion: 2
+      x: 1306
+      y: 469
+      width: 128
+      height: 104
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: everyplay-logo
+    outer:
+      serializedVersion: 2
+      x: 667
+      y: 434
+      width: 126
+      height: 126
+    inner:
+      serializedVersion: 2
+      x: 667
+      y: 434
+      width: 126
+      height: 126
+    rotated: 0
+    paddingLeft: 0.007936508
+    paddingRight: 0.007936508
+    paddingTop: 0.007936508
+    paddingBottom: 0.007936508
+  - name: google_games
+    outer:
+      serializedVersion: 2
+      x: 1636
+      y: 440
+      width: 122
+      height: 86
+    inner:
+      serializedVersion: 2
+      x: 1636
+      y: 440
+      width: 122
+      height: 86
+    rotated: 0
+    paddingLeft: 0.024590164
+    paddingRight: 0.024590164
+    paddingTop: 0.26744187
+    paddingBottom: 0.22093023
+  - name: icon_mrego
+    outer:
+      serializedVersion: 2
+      x: 1921
+      y: 1185
+      width: 113
+      height: 198
+    inner:
+      serializedVersion: 2
+      x: 1921
+      y: 1185
+      width: 113
+      height: 198
+    rotated: 0
+    paddingLeft: 0.39823008
+    paddingRight: 0.37168142
+    paddingTop: 0.01010101
+    paddingBottom: 0
+  - name: steeringhighlight
+    outer:
+      serializedVersion: 2
+      x: 667
+      y: 602
+      width: 62
+      height: 62
+    inner:
+      serializedVersion: 2
+      x: 667
+      y: 602
+      width: 62
+      height: 62
+    rotated: 0
+    paddingLeft: 0.016129032
+    paddingRight: 0.016129032
+    paddingTop: 0.016129032
+    paddingBottom: 0.016129032
+  - name: icon_bt_manualsteering
+    outer:
+      serializedVersion: 2
+      x: 1668
+      y: 1148
+      width: 252
+      height: 231
+    inner:
+      serializedVersion: 2
+      x: 1668
+      y: 1148
+      width: 252
+      height: 231
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0.015873017
+    paddingTop: 0.10822511
+    paddingBottom: 0
+  - name: icon_mrreach
+    outer:
+      serializedVersion: 2
+      x: 1944
+      y: 1848
+      width: 93
+      height: 200
+    inner:
+      serializedVersion: 2
+      x: 1944
+      y: 1848
+      width: 93
+      height: 200
+    rotated: 0
+    paddingLeft: 0.47311828
+    paddingRight: 0.67741936
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_msdiva
+    outer:
+      serializedVersion: 2
+      x: 1898
+      y: 757
+      width: 138
+      height: 197
+    inner:
+      serializedVersion: 2
+      x: 1898
+      y: 757
+      width: 138
+      height: 197
+    rotated: 0
+    paddingLeft: 0.1884058
+    paddingRight: 0.26086956
+    paddingTop: 0.015228426
+    paddingBottom: 0
+  - name: icon_mrheft
+    outer:
+      serializedVersion: 2
+      x: 1504
+      y: 944
+      width: 110
+      height: 197
+    inner:
+      serializedVersion: 2
+      x: 1504
+      y: 944
+      width: 110
+      height: 197
+    rotated: 0
+    paddingLeft: 0.37272727
+    paddingRight: 0.44545454
+    paddingTop: 0.015228426
+    paddingBottom: 0
+  - name: icon_msbumblebee
+    outer:
+      serializedVersion: 2
+      x: 1405
+      y: 574
+      width: 111
+      height: 186
+    inner:
+      serializedVersion: 2
+      x: 1405
+      y: 574
+      width: 111
+      height: 186
+    rotated: 0
+    paddingLeft: 0.2972973
+    paddingRight: 0.5045045
+    paddingTop: 0.07526882
+    paddingBottom: 0
+  - name: icon_mrstalwart
+    outer:
+      serializedVersion: 2
+      x: 1517
+      y: 606
+      width: 124
+      height: 154
+    inner:
+      serializedVersion: 2
+      x: 1517
+      y: 606
+      width: 124
+      height: 154
+    rotated: 0
+    paddingLeft: 0.24193548
+    paddingRight: 0.37096775
+    paddingTop: 0.2987013
+    paddingBottom: 0
+  - name: smallbuttonbg_lit
+    outer:
+      serializedVersion: 2
+      x: 1177
+      y: 498
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 1177
+      y: 498
+      width: 128
+      height: 128
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: smallbuttonbg_down
+    outer:
+      serializedVersion: 2
+      x: 732
+      y: 561
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 732
+      y: 561
+      width: 128
+      height: 128
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: smallbuttonbg_up
+    outer:
+      serializedVersion: 2
+      x: 1642
+      y: 527
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 1642
+      y: 527
+      width: 128
+      height: 128
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_head_skull
+    outer:
+      serializedVersion: 2
+      x: 688
+      y: 1408
+      width: 190
+      height: 192
+    inner:
+      serializedVersion: 2
+      x: 688
+      y: 1408
+      width: 190
+      height: 192
+    rotated: 0
+    paddingLeft: 0.005263158
+    paddingRight: 0.005263158
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_head_formula
+    outer:
+      serializedVersion: 2
+      x: 1124
+      y: 1085
+      width: 179
+      height: 192
+    inner:
+      serializedVersion: 2
+      x: 1124
+      y: 1085
+      width: 179
+      height: 192
+    rotated: 0
+    paddingLeft: 0.033519555
+    paddingRight: 0.039106146
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_head_cop
+    outer:
+      serializedVersion: 2
+      x: 1697
+      y: 776
+      width: 192
+      height: 118
+    inner:
+      serializedVersion: 2
+      x: 1697
+      y: 776
+      width: 192
+      height: 118
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.31355932
+    paddingBottom: 0.31355932
+  - name: icon_head_summer
+    outer:
+      serializedVersion: 2
+      x: 881
+      y: 1003
+      width: 192
+      height: 176
+    inner:
+      serializedVersion: 2
+      x: 881
+      y: 1003
+      width: 192
+      height: 176
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.045454547
+    paddingBottom: 0.045454547
+  - name: icon_head_leprechaun
+    outer:
+      serializedVersion: 2
+      x: 1019
+      y: 721
+      width: 192
+      height: 170
+    inner:
+      serializedVersion: 2
+      x: 1019
+      y: 721
+      width: 192
+      height: 170
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.064705886
+    paddingBottom: 0.064705886
+  - name: icon_head_wasteland
+    outer:
+      serializedVersion: 2
+      x: 688
+      y: 1036
+      width: 192
+      height: 183
+    inner:
+      serializedVersion: 2
+      x: 688
+      y: 1036
+      width: 192
+      height: 183
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.021857923
+    paddingBottom: 0.027322404
+  - name: icon_head_bandit
+    outer:
+      serializedVersion: 2
+      x: 1154
+      y: 1537
+      width: 192
+      height: 95
+    inner:
+      serializedVersion: 2
+      x: 1154
+      y: 1537
+      width: 192
+      height: 95
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.50526315
+    paddingBottom: 0.51578945
+  - name: icon_head_space
+    outer:
+      serializedVersion: 2
+      x: 371
+      y: 847
+      width: 192
+      height: 175
+    inner:
+      serializedVersion: 2
+      x: 371
+      y: 847
+      width: 192
+      height: 175
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.045714285
+    paddingBottom: 0.05142857
+  - name: icon_head_santa
+    outer:
+      serializedVersion: 2
+      x: 1898
+      y: 955
+      width: 145
+      height: 192
+    inner:
+      serializedVersion: 2
+      x: 1898
+      y: 955
+      width: 145
+      height: 192
+    rotated: 0
+    paddingLeft: 0.15862069
+    paddingRight: 0.16551724
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_head_pilot
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 735
+      width: 175
+      height: 192
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 735
+      width: 175
+      height: 192
+    rotated: 0
+    paddingLeft: 0.045714285
+    paddingRight: 0.05142857
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_head_valentines
+    outer:
+      serializedVersion: 2
+      x: 442
+      y: 1023
+      width: 192
+      height: 182
+    inner:
+      serializedVersion: 2
+      x: 442
+      y: 1023
+      width: 192
+      height: 182
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.027472528
+    paddingBottom: 0.027472528
+  - name: icon_head_agent
+    outer:
+      serializedVersion: 2
+      x: 1212
+      y: 730
+      width: 192
+      height: 108
+    inner:
+      serializedVersion: 2
+      x: 1212
+      y: 730
+      width: 192
+      height: 108
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.3888889
+    paddingBottom: 0.3888889
+  - name: icon_head_bobby
+    outer:
+      serializedVersion: 2
+      x: 1074
+      y: 892
+      width: 172
+      height: 192
+    inner:
+      serializedVersion: 2
+      x: 1074
+      y: 892
+      width: 172
+      height: 192
+    rotated: 0
+    paddingLeft: 0.058139537
+    paddingRight: 0.058139537
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_head_future
+    outer:
+      serializedVersion: 2
+      x: 1504
+      y: 761
+      width: 192
+      height: 133
+    inner:
+      serializedVersion: 2
+      x: 1504
+      y: 761
+      width: 192
+      height: 133
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.21804512
+    paddingBottom: 0.22556391
+  - name: icon_head_motocross
+    outer:
+      serializedVersion: 2
+      x: 178
+      y: 845
+      width: 192
+      height: 182
+    inner:
+      serializedVersion: 2
+      x: 178
+      y: 845
+      width: 192
+      height: 182
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.027472528
+    paddingBottom: 0.027472528
+  - name: icon_head_pumpkin
+    outer:
+      serializedVersion: 2
+      x: 371
+      y: 654
+      width: 166
+      height: 192
+    inner:
+      serializedVersion: 2
+      x: 371
+      y: 654
+      width: 166
+      height: 192
+    rotated: 0
+    paddingLeft: 0.078313254
+    paddingRight: 0.078313254
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_head_snowman
+    outer:
+      serializedVersion: 2
+      x: 1304
+      y: 968
+      width: 192
+      height: 173
+    inner:
+      serializedVersion: 2
+      x: 1304
+      y: 968
+      width: 192
+      height: 173
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.05202312
+    paddingBottom: 0.057803467
+  - name: icon_head_tophat
+    outer:
+      serializedVersion: 2
+      x: 826
+      y: 832
+      width: 192
+      height: 170
+    inner:
+      serializedVersion: 2
+      x: 826
+      y: 832
+      width: 192
+      height: 170
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.064705886
+    paddingBottom: 0.064705886
+  - name: icon_head_turkey
+    outer:
+      serializedVersion: 2
+      x: 564
+      y: 665
+      width: 167
+      height: 192
+    inner:
+      serializedVersion: 2
+      x: 564
+      y: 665
+      width: 167
+      height: 192
+    rotated: 0
+    paddingLeft: 0.07185629
+    paddingRight: 0.077844314
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_head_quencher
+    outer:
+      serializedVersion: 2
+      x: 1697
+      y: 656
+      width: 189
+      height: 119
+    inner:
+      serializedVersion: 2
+      x: 1697
+      y: 656
+      width: 189
+      height: 119
+    rotated: 0
+    paddingLeft: 0.015873017
+    paddingRight: 0
+    paddingTop: 0.31092438
+    paddingBottom: 0.30252102
+  - name: icon_head_tankhelmet
+    outer:
+      serializedVersion: 2
+      x: 176
+      y: 654
+      width: 161
+      height: 190
+    inner:
+      serializedVersion: 2
+      x: 176
+      y: 654
+      width: 161
+      height: 190
+    rotated: 0
+    paddingLeft: 0.0931677
+    paddingRight: 0.099378884
+    paddingTop: 0.005263158
+    paddingBottom: 0.005263158
+  - name: icon_head_train
+    outer:
+      serializedVersion: 2
+      x: 635
+      y: 858
+      width: 190
+      height: 177
+    inner:
+      serializedVersion: 2
+      x: 635
+      y: 858
+      width: 190
+      height: 177
+    rotated: 0
+    paddingLeft: 0.005263158
+    paddingRight: 0.005263158
+    paddingTop: 0.028248588
+    paddingBottom: 0.056497175
+  - name: icon_head_neck
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 544
+      width: 154
+      height: 190
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 544
+      width: 154
+      height: 190
+    rotated: 0
+    paddingLeft: 0.097402595
+    paddingRight: 0.14935064
+    paddingTop: 0.010526316
+    paddingBottom: 0
+  - name: icon_head_minecart
+    outer:
+      serializedVersion: 2
+      x: 732
+      y: 690
+      width: 186
+      height: 141
+    inner:
+      serializedVersion: 2
+      x: 732
+      y: 690
+      width: 186
+      height: 141
+    rotated: 0
+    paddingLeft: 0.016129032
+    paddingRight: 0.016129032
+    paddingTop: 0.19148937
+    paddingBottom: 0.17021276
+  - name: icon_head_beach
+    outer:
+      serializedVersion: 2
+      x: 1212
+      y: 627
+      width: 190
+      height: 102
+    inner:
+      serializedVersion: 2
+      x: 1212
+      y: 627
+      width: 190
+      height: 102
+    rotated: 0
+    paddingLeft: 0.005263158
+    paddingRight: 0.005263158
+    paddingTop: 0.47058824
+    paddingBottom: 0.4117647
+  - name: icon_head_propel
+    outer:
+      serializedVersion: 2
+      x: 938
+      y: 1180
+      width: 185
+      height: 191
+    inner:
+      serializedVersion: 2
+      x: 938
+      y: 1180
+      width: 185
+      height: 191
+    rotated: 0
+    paddingLeft: 0.0054054055
+    paddingRight: 0.032432433
+    paddingTop: 0.005235602
+    paddingBottom: 0.005235602
+  - name: icon_head_zitherhead
+    outer:
+      serializedVersion: 2
+      x: 1411
+      y: 1394
+      width: 192
+      height: 140
+    inner:
+      serializedVersion: 2
+      x: 1411
+      y: 1394
+      width: 192
+      height: 140
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.18571429
+    paddingBottom: 0.18571429
+  - name: counter_3
+    outer:
+      serializedVersion: 2
+      x: 897
+      y: 1629
+      width: 251
+      height: 419
+    inner:
+      serializedVersion: 2
+      x: 897
+      y: 1629
+      width: 251
+      height: 419
+    rotated: 0
+    paddingLeft: 0.011952192
+    paddingRight: 0.007968128
+    paddingTop: 0.112171836
+    paddingBottom: 0.1097852
+  - name: counter_2
+    outer:
+      serializedVersion: 2
+      x: 1149
+      y: 1633
+      width: 233
+      height: 415
+    inner:
+      serializedVersion: 2
+      x: 1149
+      y: 1633
+      width: 233
+      height: 415
+    rotated: 0
+    paddingLeft: 0.051502146
+    paddingRight: 0.047210302
+    paddingTop: 0.11566265
+    paddingBottom: 0.118072286
+  - name: counter_1
+    outer:
+      serializedVersion: 2
+      x: 1744
+      y: 1637
+      width: 199
+      height: 411
+    inner:
+      serializedVersion: 2
+      x: 1744
+      y: 1637
+      width: 199
+      height: 411
+    rotated: 0
+    paddingLeft: 0.020100502
+    paddingRight: 0.26633167
+    paddingTop: 0.1216545
+    paddingBottom: 0.124087594
+  mCoordinates: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

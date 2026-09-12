@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ForceFieldEffect
+  m_Shader: {fileID: 4800000, guid: 35da0cf250df40f4aa9be82435afb59f, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 47456c209f04b9e46ae965f2acc9c528, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: -0.5, y: -0.5}
+    m_Floats:
+      data:
+        first:
+          name: _Glossiness
+        second: 0.174
+      data:
+        first:
+          name: _Intensity
+        second: 1
+      data:
+        first:
+          name: _Parallax
+        second: 0.02
+      data:
+        first:
+          name: _RimPower
+        second: 2.87
+      data:
+        first:
+          name: _Scale
+        second: 1
+      data:
+        first:
+          name: _SecondRimPower
+        second: 1.67
+      data:
+        first:
+          name: _Shininess
+        second: 0.078125
+      data:
+        first:
+          name: _ThirdRimPower
+        second: 0.538
+      data:
+        first:
+          name: _Transparency
+        second: 0.5
+      data:
+        first:
+          name: _UVScale
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _DiffuseColor
+        second: {r: 0.5656952, g: 0.5651593, b: 0.641791, a: 1}
+      data:
+        first:
+          name: _Emission
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImpactColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _ReflectColor
+        second: {r: 1, g: 1, b: 1, a: 0.5}
+      data:
+        first:
+          name: _RimColor
+        second: {r: 1, g: 0.3566434, b: 0, a: 1}
+      data:
+        first:
+          name: _SecondRim
+        second: {r: 0.6940298, g: 0, b: 0.247521, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 0.5, g: 0.5, b: 0.5, a: 0}
+      data:
+        first:
+          name: _SpecularColor
+        second: {r: 0.2985075, g: 0.2871666, b: 0.2361328, a: 1}
+      data:
+        first:
+          name: _ThirdRim
+        second: {r: 0.07830252, g: 0.5522388, b: 0.4130408, a: 1}
+      data:
+        first:
+          name: _Tint
+        second: {r: 0.7941176, g: 0.40289792, b: 0.70238334, a: 1}

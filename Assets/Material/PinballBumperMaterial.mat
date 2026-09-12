@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: PinballBumperMaterial
+  m_Shader: {fileID: 4800000, guid: b05ff1fa7e32f7648913bec110c0790d, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs: {}
+    m_Floats:
+      data:
+        first:
+          name: _RimPower
+        second: 1.4107144
+      data:
+        first:
+          name: _RimPowerNormal
+        second: 1.75
+      data:
+        first:
+          name: _Shininess
+        second: 0.045002252
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 0.9277681, g: 0.9546414, b: 0.9705882, a: 1}
+      data:
+        first:
+          name: _ImpactColor
+        second: {r: 1, g: 0.6, b: 0, a: 0}
+      data:
+        first:
+          name: _RimColor
+        second: {r: 0.46323532, g: 0.23960446, b: 0, a: 1}
+      data:
+        first:
+          name: _RimColorNormal
+        second: {r: 0.6207288, g: 0.7993237, b: 0.9485294, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 0.32352942, g: 0.32352942, b: 0.32352942, a: 1}

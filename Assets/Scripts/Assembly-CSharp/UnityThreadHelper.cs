@@ -1,0 +1,199 @@
+#pragma warning disable 0618,0619
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityThreading;
+
+[ExecuteInEditMode]
+public class UnityThreadHelper : MonoBehaviour
+{
+	private static UnityThreadHelper instance = null;
+
+	private static object syncRoot = new object();
+
+	private Dispatcher dispatcher;
+
+	private TaskDistributor taskDistributor;
+
+	private LinkedList<ThreadBase> registeredThreads = new LinkedList<ThreadBase>();
+
+	private static UnityThreadHelper Instance
+	{
+		get
+		{
+			EnsureHelper();
+			return instance;
+		}
+	}
+
+	public static Dispatcher Dispatcher
+	{
+		get
+		{
+			return Instance.CurrentDispatcher;
+		}
+	}
+
+	public static TaskDistributor TaskDistributor
+	{
+		get
+		{
+			return Instance.CurrentTaskDistributor;
+		}
+	}
+
+	public Dispatcher CurrentDispatcher
+	{
+		get
+		{
+			return dispatcher;
+		}
+	}
+
+	public TaskDistributor CurrentTaskDistributor
+	{
+		get
+		{
+			return taskDistributor;
+		}
+	}
+
+	public static void EnsureHelper()
+	{
+		lock (syncRoot)
+		{
+			if ((object)instance == null)
+			{
+				instance = UnityEngine.Object.FindObjectOfType(typeof(UnityThreadHelper)) as UnityThreadHelper;
+				if ((object)instance == null)
+				{
+					GameObject gameObject = new GameObject("[UnityThreadHelper]");
+					gameObject.hideFlags = HideFlags.HideAndDontSave | HideFlags.HideInInspector;
+					instance = gameObject.AddComponent<UnityThreadHelper>();
+					instance.EnsureHelperInstance();
+				}
+			}
+		}
+	}
+
+	private void EnsureHelperInstance()
+	{
+		dispatcher = Dispatcher.MainNoThrow ?? new Dispatcher();
+		taskDistributor = TaskDistributor.MainNoThrow ?? new TaskDistributor("TaskDistributor");
+	}
+
+	public static ActionThread CreateThread(Action<ActionThread> action, bool autoStartThread)
+	{
+		Instance.EnsureHelperInstance();
+		Action<ActionThread> action2 = (ActionThread currentThread) =>
+		{
+			try
+			{
+				action(currentThread);
+			}
+			catch (Exception message)
+			{
+				Debug.LogError(message);
+			}
+		};
+		ActionThread actionThread = new ActionThread(action2, autoStartThread);
+		Instance.RegisterThread(actionThread);
+		return actionThread;
+	}
+
+	public static ActionThread CreateThread(Action<ActionThread> action)
+	{
+		return CreateThread(action, true);
+	}
+
+	public static ActionThread CreateThread(Action action, bool autoStartThread)
+	{
+		return CreateThread((ActionThread thread) =>
+		{
+			action();
+		}, autoStartThread);
+	}
+
+	public static ActionThread CreateThread(Action action)
+	{
+		return CreateThread((ActionThread thread) =>
+		{
+			action();
+		}, true);
+	}
+
+	public static ThreadBase CreateThread(Func<ThreadBase, IEnumerator> action, bool autoStartThread)
+	{
+		Instance.EnsureHelperInstance();
+		EnumeratableActionThread enumeratableActionThread = new EnumeratableActionThread(action, autoStartThread);
+		Instance.RegisterThread(enumeratableActionThread);
+		return enumeratableActionThread;
+	}
+
+	public static ThreadBase CreateThread(Func<ThreadBase, IEnumerator> action)
+	{
+		return CreateThread(action, true);
+	}
+
+	public static ThreadBase CreateThread(Func<IEnumerator> action, bool autoStartThread)
+	{
+		Func<ThreadBase, IEnumerator> action2 = (ThreadBase thread) => action();
+		return CreateThread(action2, autoStartThread);
+	}
+
+	public static ThreadBase CreateThread(Func<IEnumerator> action)
+	{
+		Func<ThreadBase, IEnumerator> action2 = (ThreadBase thread) => action();
+		return CreateThread(action2, true);
+	}
+
+	private void RegisterThread(ThreadBase thread)
+	{
+		if (!registeredThreads.Contains(thread))
+		{
+			registeredThreads.AddFirst(thread);
+		}
+	}
+
+	private void OnDestroy()
+	{
+		foreach (ThreadBase registeredThread in registeredThreads)
+		{
+			registeredThread.Dispose();
+		}
+		if (dispatcher != null)
+		{
+			dispatcher.Dispose();
+		}
+		dispatcher = null;
+		if (taskDistributor != null)
+		{
+			taskDistributor.Dispose();
+		}
+		taskDistributor = null;
+		if (instance == this)
+		{
+			instance = null;
+		}
+	}
+
+	private void Update()
+	{
+		if (dispatcher != null)
+		{
+			dispatcher.ProcessTasks();
+		}
+		LinkedListNode<ThreadBase> linkedListNode = registeredThreads.First;
+		while (linkedListNode != null)
+		{
+			LinkedListNode<ThreadBase> next = linkedListNode.Next;
+			if (!linkedListNode.Value.IsAlive)
+			{
+				linkedListNode.Value.Dispose();
+				registeredThreads.Remove(linkedListNode);
+			}
+			linkedListNode = next;
+		}
+	}
+}

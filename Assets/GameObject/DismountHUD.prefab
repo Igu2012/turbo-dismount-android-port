@@ -1,0 +1,382 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  m_Layer: 0
+  m_Name: DismountHUD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f7db9a480b403690a4a83220213122, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  material: {fileID: 2100000, guid: db94f5b1ca9762448b9bbc782ad0ef56, type: 2}
+  sprites:
+  - name: Damage_DetachNeck
+    outer:
+      serializedVersion: 2
+      x: 92
+      y: 7
+      width: 92
+      height: 91
+    inner:
+      serializedVersion: 2
+      x: 92
+      y: 7
+      width: 92
+      height: 91
+    rotated: 0
+    paddingLeft: 0.02173913
+    paddingRight: 0.02173913
+    paddingTop: 0.021978023
+    paddingBottom: 0.032967035
+  - name: Damage_BreakBone
+    outer:
+      serializedVersion: 2
+      x: 614
+      y: 459
+      width: 90
+      height: 91
+    inner:
+      serializedVersion: 2
+      x: 614
+      y: 459
+      width: 90
+      height: 91
+    rotated: 0
+    paddingLeft: 0.033333335
+    paddingRight: 0.033333335
+    paddingTop: 0.021978023
+    paddingBottom: 0.032967035
+  - name: Damage_DetachSpine
+    outer:
+      serializedVersion: 2
+      x: 369
+      y: 7
+      width: 91
+      height: 91
+    inner:
+      serializedVersion: 2
+      x: 369
+      y: 7
+      width: 91
+      height: 91
+    rotated: 0
+    paddingLeft: 0.021978023
+    paddingRight: 0.032967035
+    paddingTop: 0.021978023
+    paddingBottom: 0.032967035
+  - name: Damage_BreakRibs
+    outer:
+      serializedVersion: 2
+      x: 523
+      y: 459
+      width: 90
+      height: 91
+    inner:
+      serializedVersion: 2
+      x: 523
+      y: 459
+      width: 90
+      height: 91
+    rotated: 0
+    paddingLeft: 0.033333335
+    paddingRight: 0.033333335
+    paddingTop: 0.021978023
+    paddingBottom: 0.032967035
+  - name: Damage_BreakSpine
+    outer:
+      serializedVersion: 2
+      x: 695
+      y: 367
+      width: 90
+      height: 91
+    inner:
+      serializedVersion: 2
+      x: 695
+      y: 367
+      width: 90
+      height: 91
+    rotated: 0
+    paddingLeft: 0.033333335
+    paddingRight: 0.033333335
+    paddingTop: 0.021978023
+    paddingBottom: 0.032967035
+  - name: Damage_DetachLimbJoint
+    outer:
+      serializedVersion: 2
+      x: 277
+      y: 7
+      width: 91
+      height: 91
+    inner:
+      serializedVersion: 2
+      x: 277
+      y: 7
+      width: 91
+      height: 91
+    rotated: 0
+    paddingLeft: 0.032967035
+    paddingRight: 0.021978023
+    paddingTop: 0.021978023
+    paddingBottom: 0.032967035
+  - name: Damage_VehicleDetach
+    outer:
+      serializedVersion: 2
+      x: 705
+      y: 459
+      width: 90
+      height: 91
+    inner:
+      serializedVersion: 2
+      x: 705
+      y: 459
+      width: 90
+      height: 91
+    rotated: 0
+    paddingLeft: 0.033333335
+    paddingRight: 0.033333335
+    paddingTop: 0.032967035
+    paddingBottom: 0.021978023
+  - name: Damage_Vehicle
+    outer:
+      serializedVersion: 2
+      x: 461
+      y: 7
+      width: 91
+      height: 91
+    inner:
+      serializedVersion: 2
+      x: 461
+      y: 7
+      width: 91
+      height: 91
+    rotated: 0
+    paddingLeft: 0.032967035
+    paddingRight: 0.021978023
+    paddingTop: 0.032967035
+    paddingBottom: 0.021978023
+  - name: Damage_Flip
+    outer:
+      serializedVersion: 2
+      x: 185
+      y: 7
+      width: 91
+      height: 91
+    inner:
+      serializedVersion: 2
+      x: 185
+      y: 7
+      width: 91
+      height: 91
+    rotated: 0
+    paddingLeft: 0.032967035
+    paddingRight: 0.021978023
+    paddingTop: 0.021978023
+    paddingBottom: 0.032967035
+  - name: Damage_BreakHip
+    outer:
+      serializedVersion: 2
+      x: 695
+      y: 275
+      width: 89
+      height: 91
+    inner:
+      serializedVersion: 2
+      x: 695
+      y: 275
+      width: 89
+      height: 91
+    rotated: 0
+    paddingLeft: 0.033707865
+    paddingRight: 0.04494382
+    paddingTop: 0.021978023
+    paddingBottom: 0.032967035
+  - name: Damage_BreakSkull
+    outer:
+      serializedVersion: 2
+      x: 726
+      y: 591
+      width: 90
+      height: 91
+    inner:
+      serializedVersion: 2
+      x: 726
+      y: 591
+      width: 90
+      height: 91
+    rotated: 0
+    paddingLeft: 0.033333335
+    paddingRight: 0.033333335
+    paddingTop: 0.021978023
+    paddingBottom: 0.032967035
+  - name: Damage_Airtime
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 6
+      width: 91
+      height: 92
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 6
+      width: 91
+      height: 92
+    rotated: 0
+    paddingLeft: 0.032967035
+    paddingRight: 0.021978023
+    paddingTop: 0.02173913
+    paddingBottom: 0.02173913
+  - name: nailedit
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 245
+      width: 694
+      height: 186
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 245
+      width: 694
+      height: 186
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: t-dismountcomplete
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 432
+      width: 522
+      height: 250
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 432
+      width: 522
+      height: 250
+    rotated: 0
+    paddingLeft: 0.18965517
+    paddingRight: 0.21455939
+    paddingTop: 0.18
+    paddingBottom: 0.2
+  - name: highscore
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 683
+      width: 828
+      height: 341
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 683
+      width: 828
+      height: 341
+    rotated: 0
+    paddingLeft: 0.002415459
+    paddingRight: 0.0012077295
+    paddingTop: 0.008797654
+    paddingBottom: 0.0029325513
+  - name: fullspeed
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 99
+      width: 602
+      height: 145
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 99
+      width: 602
+      height: 145
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: stalled
+    outer:
+      serializedVersion: 2
+      x: 603
+      y: 67
+      width: 399
+      height: 177
+    inner:
+      serializedVersion: 2
+      x: 603
+      y: 67
+      width: 399
+      height: 177
+    rotated: 0
+    paddingLeft: 0.14035088
+    paddingRight: 0.14285715
+    paddingTop: 0.22033899
+    paddingBottom: 0.2259887
+  - name: go
+    outer:
+      serializedVersion: 2
+      x: 523
+      y: 551
+      width: 202
+      height: 131
+    inner:
+      serializedVersion: 2
+      x: 523
+      y: 551
+      width: 202
+      height: 131
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  mCoordinates: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

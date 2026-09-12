@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: DollarSign
+  m_Shader: {fileID: 4800000, guid: 9478d93dbc1218f499c9f43e48af3015, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _ContrastCenter
+        second: 0.55
+      data:
+        first:
+          name: _ContrastPower
+        second: 10
+      data:
+        first:
+          name: _ContrastValueAtCenter
+        second: 0.7
+      data:
+        first:
+          name: _DiffuseBleed
+        second: 0.15
+      data:
+        first:
+          name: _RimPower
+        second: 1.5
+      data:
+        first:
+          name: _Shininess
+        second: 0.078125
+      data:
+        first:
+          name: _ViewConstant
+        second: 0.1
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 0.64705884, g: 0.5088534, b: 0.26167822, a: 1}
+      data:
+        first:
+          name: _RimColor
+        second: {r: 0.26, g: 0.19, b: 0.16, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 0.9632353, g: 0.95854616, b: 0.92073965, a: 1}
