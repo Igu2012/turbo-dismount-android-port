@@ -18,7 +18,7 @@ public static class PortBuild
     static void Prepare(string platform)
     {
         PlayerSettings.companyName = "Igu2012";
-        PlayerSettings.productName = "Turbo Dismount Fan Port";
+        PlayerSettings.productName = "Turbo Dismount";
             PlayerSettings.bundleVersion = "1.0.0";
         EditorBuildSettings.scenes = Scenes.Select(s => new EditorBuildSettingsScene(s, true)).ToArray();
         if (platform == "Android")
@@ -26,6 +26,8 @@ public static class PortBuild
             AndroidExternalToolsSettings.jdkRootPath = "/usr/lib/jvm/java-11-openjdk-amd64";
             AndroidExternalToolsSettings.sdkRootPath = "/home/ubuntu/turbo-dismount-assets/android-sdk";
             AndroidExternalToolsSettings.ndkRootPath = "/home/ubuntu/turbo-dismount-assets/android-sdk/ndk/23.1.7779620";
+            var icon = AssetDatabase.LoadAssetAtPath<Texture2D>("Assets/Icon.png");
+            if (icon != null) PlayerSettings.SetIconsForTargetGroup(BuildTargetGroup.Android, new[] { icon }, IconKind.Application);
             PlayerSettings.SetApplicationIdentifier(BuildTargetGroup.Android, "com.igu2012.turbodismountfan");
             PlayerSettings.SetScriptingBackend(BuildTargetGroup.Android, ScriptingImplementation.IL2CPP);
             PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARM64;
