@@ -62,6 +62,7 @@ namespace Dismount
 				slider.sliderValue = operation.progress;
 				yield return 0;
 			}
+			LoadingComplete();
 			GameObject[] array = destroyAfterLoad;
 			foreach (GameObject go in array)
 			{

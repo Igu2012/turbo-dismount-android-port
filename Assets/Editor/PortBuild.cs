@@ -12,8 +12,10 @@ public static class PortBuild
     {
         "Assets/TurboDismount/Scenes/LoadingScreen.unity",
         "Assets/TurboDismount/Scenes/Vehicles.unity",
+        "Assets/TurboDismount/Scenes/UI/UIBuilder.unity",
         "Assets/TurboDismount/Scenes/HUD.unity"
-    };
+    }.Concat(Directory.GetFiles("Assets/TurboDismount/Data_ios/Levels", "*.unity")
+        .Select(path => path.Replace('\\', '/'))).ToArray();
 
     static void Prepare(string platform)
     {
